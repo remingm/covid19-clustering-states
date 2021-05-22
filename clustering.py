@@ -37,8 +37,6 @@ def user_interface():
         ]
     )
     cols = st.multiselect("Columns to Use", cols, default="hospitalizedCurrently")
-    # do_scale = st.checkbox("zscore")
-    # minmax = st.checkbox("minmax scale from 0-1", True)
     scale_method = st.selectbox(
         "Preprocessing method", ["Minmax scale from 0-1", "Zscore", "None"]
     )
@@ -51,7 +49,7 @@ def user_interface():
         do_scale = False
         minmax = True
 
-    min_samples = st.slider("Minimum number of states per cluster", 1, 10, 2)
+    min_samples = st.slider("Minimum number of states per cluster", 1, 10, 3)
 
     return do_scale, minmax, cols, min_samples
 
