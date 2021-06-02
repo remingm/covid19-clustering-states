@@ -9,5 +9,6 @@ streamlit run clustering.py
 ````
 
 ## Blog Post
+https://michael-remington.com/using-machine-learning-to-compare-states-covid-trajectories/index.html
 
 
